@@ -1,0 +1,10 @@
+[tools]
+1password = "latest"
+claude = "latest"
+duckdb = "latest"
+gemini = "latest"
+node = "22"
+"pipx:snowflake-cli" = "latest"
+pre-commit = "latest"
+terraform = "latest"
+uv = "latest"
