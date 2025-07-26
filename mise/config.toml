@@ -1,10 +1,17 @@
+[settings]
+experimental = true
+disable_backends = ["asdf", "vfox"]
+idiomatic_version_file_enable_tools = ["python"]
+
+[settings.pipx]
+uvx = true
+
 [tools]
 1password = "latest"
 claude = "latest"
 duckdb = "latest"
 gemini = "latest"
 node = "22"
-"pipx:snowflake-cli" = "latest"
 pre-commit = "latest"
 terraform = "latest"
 uv = "latest"
