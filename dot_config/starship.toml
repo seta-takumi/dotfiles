@@ -6,11 +6,3 @@ style = 'bold blue'
 [aws]
 format = '[aws on $profile]($style) '
 style = '#ff9900'
-
-[aws.profile_aliases]
-dev-client-report-data-admin = 'kurarepo(dev)'
-stg-client-report-data-admin = 'kurarepo(stg)'
-prod-client-report-data-admin = 'kurarepo(prod)'
-dev-firstlook-admin = 'firstlook(dev)'
-stg-firstlook-admin = 'firstlook(stg)'
-prod-firstlook-admin = 'firstlook(prod)'
