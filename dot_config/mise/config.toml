@@ -7,11 +7,10 @@ idiomatic_version_file_enable_tools = ["python"]
 uvx = true
 
 [tools]
-1password = "latest"
-claude = "latest"
-duckdb = "latest"
-gemini = "latest"
-node = "22"
-pre-commit = "latest"
+node = "lts"
+
 terraform = "latest"
-uv = "latest"
+
+"aqua:astral-sh/uv" = "latest"
+"aqua:pnpm/pnpm" = "latest"
+
