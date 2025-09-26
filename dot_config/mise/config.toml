@@ -13,4 +13,5 @@ terraform = "latest"
 
 "aqua:astral-sh/uv" = "latest"
 "aqua:pnpm/pnpm" = "latest"
+"aqua:pre-commit/pre-commit" = "latest"
 
