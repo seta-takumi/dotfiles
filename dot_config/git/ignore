@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+.idea/
+*.iml
+.vscode/
+.mise.toml
+.mise.local.toml
+**/.claude/settings.local.json
+**/.serena/project.yml
+**/.mcp.json
