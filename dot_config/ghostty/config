@@ -1,1 +1,5 @@
+theme = TokyoNight
 background-opacity = 0.85
+background-blur = true
+font-size = 15
+macos-titlebar-style = transparent
