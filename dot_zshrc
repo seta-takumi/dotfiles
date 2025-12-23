@@ -4,6 +4,7 @@ eval "$(mise activate zsh)"
 
 # alias
 alias ls='eza --icons'
+alias cat='bat'
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
