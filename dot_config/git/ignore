@@ -2,6 +2,7 @@
 node_modules/
 .idea/
 *.iml
+.serena/
 .vscode/
 .mise.toml
 .mise.local.toml
