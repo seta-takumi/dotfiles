@@ -1,3 +1,9 @@
 eval "$(starship init zsh)"
-
+eval "$(zoxide init zsh)"
 eval "$(mise activate zsh)"
+
+# alias
+alias ls='eza --icons'
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
