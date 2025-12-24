@@ -3,6 +3,9 @@ eval "$(zoxide init zsh)"
 eval "$(sheldon source)"
 eval "$(mise activate zsh)"
 
+autoload -U compinit
+compinit
+
 # alias
 alias ls='eza --icons'
 alias cat='bat'
