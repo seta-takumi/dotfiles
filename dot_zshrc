@@ -12,3 +12,5 @@ alias cat='bat'
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+# Added by Antigravity
+export PATH="/Users/ta_seta/.antigravity/antigravity/bin:$PATH"
