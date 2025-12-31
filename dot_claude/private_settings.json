@@ -1,14 +1,21 @@
 {
   "permissions": {
     "allow": [
+      "Bash(gh pr view:*)",
+      "Bash(gh pr diff:*)",
       "mcp__serena"
     ],
     "deny": [
-      "Bash(rm -rf ../*)",
-      "Bash(rm -rf /)",
-      "Bash(rm -rf /*)",
-      "Bash(rm -rf ~/*)",
-      "Bash(sudo:*)"
+      "Bash(sudo:*)",
+      "Bash(rm -rf:*)",
+      "Bash(chmod -R 777:*)",
+      "Bash(chmod 777:*)",
+      "Bash(chown -R:*)",
+      "Bash(brew install:*)",
+      "Bash(npm install -g:*)",
+      "Bash(pip install:*)",
+      "Bash(git push:*)",
+      "Bash(git rebase:*)"
     ]
   },
   "enabledPlugins": {
