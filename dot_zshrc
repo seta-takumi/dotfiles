@@ -12,3 +12,6 @@ alias cat='bat'
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+# zeno.zsh
+source "$HOME/.config/zsh/zeno.zsh"
