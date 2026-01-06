@@ -6,6 +6,9 @@ idiomatic_version_file_enable_tools = ["python"]
 [settings.pipx]
 uvx = true
 
+[settings.npm]
+package_manager = "pnpm"
+
 [tools]
 node = "lts"
 
