@@ -1,0 +1,11 @@
+snippets:
+  - name: SSO login
+    keyword: sso;
+    snippet: aws sso login --profile {{aws-profile}}
+
+completions:
+  - name: profile
+    patterns:
+      - '^aws\b.*--profile(?:(?:=|\s+)([A-Za-z0-9._-]*))?\s*$'
+      - '^\s*AWS_PROFILE=[A-Za-z0-9._-]*$'
+    sourceCommand: "aws configure list-profiles"
