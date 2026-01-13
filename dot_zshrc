@@ -9,6 +9,8 @@ compinit
 # alias
 alias ls='eza --icons'
 alias cat='bat'
+alias vi='nvim'
+alias grep='rg'
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
