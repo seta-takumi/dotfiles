@@ -16,3 +16,7 @@ terraform = "latest"
 uv = "latest"
 pnpm = "latest"
 pre-commit = "latest"
+
+# npm packages
+"npm:cz-git" = "latest"
+"npm:czg" = "latest"
