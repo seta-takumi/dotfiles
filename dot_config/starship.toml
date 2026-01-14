@@ -1,8 +1,50 @@
+add_newline = true
+
+
+# ----------------------------------------------------
+# left module
+# ----------------------------------------------------
+[directory]
+truncation_length = 6
+truncation_symbol = ' '
+truncate_to_repo = false
+home_symbol = '~'
+read_only = ' 󰌾 '
+format = """
+[](fg:#80EBDF)\
+[$path]($style)\
+[$read_only]($read_only_style)\
+[](fg:#80EBDF)\
+"""
+style = 'bold fg:#313244 bg:#80EBDF'
+read_only_style = 'bold fg:#313244 bg:#80EBDF'
+
+[git_branch]
+symbol = ""
+style = "fg:#769ff0 bg:#333844"
+format = """
+[](fg:#333844)\
+[$symbol $branch]($style)\
+"""
+
+[git_status]
+style = "fg:#769ff0 bg:#333844"
+format = """
+[$all_status$ahead_behind]($style)\
+[](fg:#333844)\
+"""
+
+# ----------------------------------------------------
+# Google Cloud module
+# ----------------------------------------------------
 [gcloud]
 format = '[gcloud on $symbol$project(\($domain\))]($style) '
 style = 'bold blue'
 
-
+# ----------------------------------------------------
+# AWS module
+# ----------------------------------------------------
 [aws]
-format = '[aws on $profile]($style) '
-style = '#ff9900'
+format = '[$symbol $profile ]($style)'
+symbol = "💭"
+style = "bold fg:#ff9900"
