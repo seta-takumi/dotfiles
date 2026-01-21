@@ -7,6 +7,7 @@ format = """
 $directory\
 $git_branch\
 $git_status\
+$python\
 $nodejs\
 $aws\
 $gcloud\
@@ -49,6 +50,15 @@ format = """
 [](fg:#333844)\
 """
 
+[python]
+python_binary = [["uv", "run", "--no-python-downloads", "--no-project", "python"]]
+format = """
+[](fg:#ffcb6b)\
+[ $version]($style)\
+[](fg:#ffcb6b)\
+"""
+style = "bold fg:#313244 bg:#ffcb6b"
+
 [nodejs]
 # 色は公式のビジュアルガイドラインより
 format = """
@@ -59,12 +69,13 @@ format = """
 style = "bold fg:#313244 bg:#66cc33"
 
 [gcloud]
-format = '[gcloud on $symbol$project(\($domain\))]($style) '
+format = '[ $symbol $project(\($domain\))]($style) '
+symbol = " "
 style = 'bold blue'
 
 [aws]
-format = '[$symbol $profile ]($style)'
-symbol = "💭"
+format = '[ $symbol $profile]($style)'
+symbol = " "
 style = "bold fg:#ff9900"
 
 [fill]
