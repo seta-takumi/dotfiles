@@ -1,5 +1,20 @@
 add_newline = true
 
+# ----------------------------------------------------
+# format
+# ----------------------------------------------------
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$aws\
+$gcloud\
+$fill\
+$cmd_duration\
+$time\
+\n$character\
+"""
 
 # ----------------------------------------------------
 # left module
@@ -34,17 +49,36 @@ format = """
 [](fg:#333844)\
 """
 
-# ----------------------------------------------------
-# Google Cloud module
-# ----------------------------------------------------
+[nodejs]
+# 色は公式のビジュアルガイドラインより
+format = """
+[](fg:#66cc33)\
+[ $version]($style)\
+[](fg:#66cc33)\
+"""
+style = "bold fg:#313244 bg:#66cc33"
+
 [gcloud]
 format = '[gcloud on $symbol$project(\($domain\))]($style) '
 style = 'bold blue'
 
-# ----------------------------------------------------
-# AWS module
-# ----------------------------------------------------
 [aws]
 format = '[$symbol $profile ]($style)'
 symbol = "💭"
 style = "bold fg:#ff9900"
+
+[fill]
+symbol = ' '
+
+# ----------------------------------------------------
+# right module
+# ----------------------------------------------------
+[cmd_duration]
+min_time = 1
+style = 'fg:#e0af68'
+format = "[ $duration]($style)" # nf-pl-right_soft_divider, nf-mdi-clock
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+format = '[[  $time](fg:#a0a9cb)]($style)'
