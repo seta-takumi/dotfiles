@@ -1,3 +1,9 @@
+customCommands:
+  - command: czg
+    context: files
+    key: c
+    output: terminal
+
 gui:
   language: "ja"
   showIcons: true
