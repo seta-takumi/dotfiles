@@ -27,13 +27,13 @@ truncate_to_repo = false
 home_symbol = '~'
 read_only = ' 󰌾 '
 format = """
-[](fg:#80EBDF)\
+[](fg:#333844)\
 [$path]($style)\
 [$read_only]($read_only_style)\
-[](fg:#80EBDF)\
+[](fg:#333844)\
 """
-style = 'bold fg:#313244 bg:#80EBDF'
-read_only_style = 'bold fg:#313244 bg:#80EBDF'
+style = 'bold fg:#769ff0 bg:#333844'
+read_only_style = 'bold fg:#313244 bg:#333844'
 
 [git_branch]
 symbol = ""
