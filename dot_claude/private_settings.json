@@ -4,7 +4,9 @@
     "allow": [
       "Bash(gh pr view:*)",
       "Bash(gh pr diff:*)",
-      "mcp__serena"
+      "mcp__serena",
+      "mcp__aws-knowledge",
+      "mcp__context7"
     ],
     "deny": [
       "Bash(sudo:*)",
