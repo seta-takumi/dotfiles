@@ -37,17 +37,17 @@ read_only_style = 'bold fg:#313244 bg:#333844'
 
 [git_branch]
 symbol = ""
-style = "fg:#769ff0 bg:#333844"
+style = "fg:#ffffff bg:#232925"
 format = """
-[](fg:#333844)\
+[](fg:#232925)\
 [$symbol $branch]($style)\
 """
 
 [git_status]
-style = "fg:#769ff0 bg:#333844"
+style = "fg:#ffffff bg:#232925"
 format = """
 [$all_status$ahead_behind]($style)\
-[](fg:#333844)\
+[](fg:#232925)\
 """
 
 [python]
