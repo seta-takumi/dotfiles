@@ -20,5 +20,5 @@ pre-commit = "latest"
 # npm packages
 "npm:cz-git" = "latest"
 "npm:czg" = "latest"
-"npm:agent-browser" = "0.6.0"
+"npm:agent-browser" = "latest"
 "npm:@playwright/mcp" = "latest"
