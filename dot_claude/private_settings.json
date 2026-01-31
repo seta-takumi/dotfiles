@@ -27,5 +27,19 @@
     "code-review@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true
   },
+  "extraKnownMarketplaces": {
+    "anthropic-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      }
+    },
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    }
+  },
   "language": "日本語"
 }
