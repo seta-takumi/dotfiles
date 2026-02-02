@@ -9,7 +9,7 @@
 **任意**: gitmoji （許可されたリポジトリのみで使用）
 
 ```
-<type>: <emoji> <description>
+<type>[optional scope]: <emoji> <description>
 
 [optional body]
 ```
@@ -33,3 +33,6 @@
 - `fix: 🐛 rumdlの警告を解消`
 - `ci: 🎡 actions/checkoutをv6.0.1に更新`
 
+## 参考
+
+- [Conventional Commits](https://www.conventionalcommits.org/ja/v1.0.0/)
