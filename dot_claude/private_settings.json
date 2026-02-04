@@ -25,7 +25,8 @@
   "enabledPlugins": {
     "pr-review-toolkit@claude-plugins-official": true,
     "code-review@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true
+    "code-simplifier@claude-plugins-official": true,
+    "terraform-code-generation@hashicorp": true
   },
   "extraKnownMarketplaces": {
     "anthropic-agent-skills": {
@@ -38,6 +39,12 @@
       "source": {
         "source": "github",
         "repo": "anthropics/claude-plugins-official"
+      }
+    },
+    "hashicorp": {
+      "source": {
+        "source": "github",
+        "repo": "hashicorp/agent-skills"
       }
     }
   },
