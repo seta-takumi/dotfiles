@@ -23,3 +23,5 @@ pre-commit = "latest"
 "npm:czg" = "latest"
 "npm:agent-browser" = "latest"
 "npm:@playwright/mcp" = "latest"
+
+"pipx:claude-code-log" = "latest"
