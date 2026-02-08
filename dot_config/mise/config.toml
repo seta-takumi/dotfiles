@@ -10,11 +10,16 @@ uvx = true
 package_manager = "pnpm"
 
 [tools]
+# JS/TS
 node = "lts"
-
-terraform = "latest"
-uv = "latest"
 pnpm = "latest"
+
+# Python
+uv = "latest"
+ty = "latest"
+
+# Other
+terraform = "latest"
 pre-commit = "latest"
 
 # npm packages
@@ -22,6 +27,7 @@ pre-commit = "latest"
 "npm:cz-git" = "latest"
 "npm:czg" = "latest"
 "npm:agent-browser" = "latest"
-"npm:@playwright/mcp" = "latest"
+"npm:@playwright/cli" = "latest"
+"npm:@typescript/native-preview" = "latest"
 
 "pipx:claude-code-log" = "latest"
