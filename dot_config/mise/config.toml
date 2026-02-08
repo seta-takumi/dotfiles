@@ -24,7 +24,6 @@ pre-commit = "latest"
 
 # npm packages
 "npm:@aikidosec/safe-chain" = "latest"
-"npm:cz-git" = "latest"
 "npm:czg" = "latest"
 "npm:agent-browser" = "latest"
 "npm:@playwright/cli" = "latest"
