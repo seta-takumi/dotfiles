@@ -26,7 +26,8 @@
     "pr-review-toolkit@claude-plugins-official": true,
     "code-review@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
-    "terraform-code-generation@hashicorp": true
+    "terraform-code-generation@hashicorp": true,
+    "dbt@dbt-agent-marketplace": true
   },
   "extraKnownMarketplaces": {
     "anthropic-agent-skills": {
@@ -45,6 +46,12 @@
       "source": {
         "source": "github",
         "repo": "hashicorp/agent-skills"
+      }
+    },
+    "dbt-agent-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "dbt-labs/dbt-agent-skills"
       }
     }
   },
