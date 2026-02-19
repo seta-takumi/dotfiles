@@ -10,6 +10,7 @@
       "Bash(gh pr comment:*)",
       "Bash(gh pr list:*)",
       "Bash(gh run list:*)",
+      "Bash(gh run view:*)",
       "mcp__serena",
       "mcp__aws-knowledge",
       "mcp__context7"
