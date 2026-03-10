@@ -33,7 +33,8 @@
     "code-review@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
     "terraform-code-generation@hashicorp": true,
-    "dbt@dbt-agent-marketplace": true
+    "dbt@dbt-agent-marketplace": true,
+    "skill-creator@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "anthropic-agent-skills": {
