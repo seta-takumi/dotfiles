@@ -34,7 +34,8 @@
     "code-simplifier@claude-plugins-official": true,
     "terraform-code-generation@hashicorp": true,
     "dbt@dbt-agent-marketplace": true,
-    "skill-creator@claude-plugins-official": true
+    "skill-creator@claude-plugins-official": true,
+    "chrome-devtools-mcp@chrome-devtools-plugins": true
   },
   "extraKnownMarketplaces": {
     "anthropic-agent-skills": {
@@ -59,6 +60,12 @@
       "source": {
         "source": "github",
         "repo": "dbt-labs/dbt-agent-skills"
+      }
+    },
+    "chrome-devtools-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "ChromeDevTools/chrome-devtools-mcp"
       }
     }
   },
