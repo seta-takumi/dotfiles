@@ -1,5 +1,6 @@
 theme = TokyoNight
 background-opacity = 0.85
+background-blur = macos-glass-clear
 font-family = "UDEV Gothic 35NFLG"
 font-size = 15
 macos-titlebar-style = transparent
