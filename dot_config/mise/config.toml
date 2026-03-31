@@ -10,6 +10,8 @@ uvx = true
 package_manager = "pnpm"
 
 [tools]
+go = "latest"
+
 # JS/TS
 node = "lts"
 pnpm = "latest"
