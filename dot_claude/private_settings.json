@@ -1,6 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "cleanupPeriodDays": 30,
+  "sandbox": {
+    "enabled": true,
+    "allowUnsandboxedCommands": false
+  },
   "permissions": {
     "allow": [
       "Bash(gh issue view:*)",
@@ -25,7 +29,12 @@
       "Bash(npm install -g:*)",
       "Bash(pip install:*)",
       "Bash(git push:*)",
-      "Bash(git rebase:*)"
+      "Bash(git rebase:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Read(**/.mise.toml)"
     ]
   },
   "enabledPlugins": {

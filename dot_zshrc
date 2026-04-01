@@ -17,6 +17,3 @@ source <(fzf --zsh)
 
 # zeno.zsh
 source "$HOME/.config/zsh/zeno.zsh"
-
-# local settings
-[[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
