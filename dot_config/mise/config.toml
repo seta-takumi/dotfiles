@@ -30,3 +30,4 @@ pre-commit = "latest"
 "npm:@typescript/native-preview" = "latest"
 
 "pipx:claude-code-log" = "latest"
+claude-code = "latest"
