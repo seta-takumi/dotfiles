@@ -10,24 +10,49 @@ uvx = true
 package_manager = "pnpm"
 
 [tools]
+# Runtimes and package managers
+deno = "latest"
 go = "latest"
-
-# JS/TS
 node = "lts"
 pnpm = "latest"
-
-# Python
+rust = "latest"
 uv = "latest"
+
+# Development tools
+pre-commit = "latest"
+terraform = "latest"
 ty = "latest"
 
-# Other
-terraform = "latest"
-pre-commit = "latest"
+# Default backend tools
+"1password-cli" = "latest"
+acli = "latest"
+awscli = "latest"
+bat = "latest"
+chezmoi = "latest"
+fd = "latest"
+fzf = "latest"
+gh = "latest"
+ghq = "latest"
+jq = "latest"
+lazygit = "latest"
+neovim = "latest"
+ripgrep = "latest"
+starship = "latest"
+yazi = "latest"
+zellij = "latest"
+zoxide = "latest"
+claude-code = "latest"
+
+# Cargo tools
+"cargo:eza" = "latest"
 
 # npm packages
 "npm:@aikidosec/safe-chain" = "latest"
-"npm:agent-browser" = "latest"
 "npm:@typescript/native-preview" = "latest"
+"npm:agent-browser" = "latest"
+"npm:czg" = "latest"
 
+# pipx packages
 "pipx:claude-code-log" = "latest"
-claude-code = "latest"
+"pipx:git-filter-repo" = "latest"
+"pipx:snowflake-cli" = "latest"
