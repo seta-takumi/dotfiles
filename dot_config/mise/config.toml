@@ -24,7 +24,7 @@ terraform = "latest"
 ty = "latest"
 
 # Default backend tools
-"1password-cli" = "latest"
+1password-cli = "latest"
 acli = "latest"
 awscli = "latest"
 bat = "latest"
