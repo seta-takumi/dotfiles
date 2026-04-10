@@ -19,39 +19,13 @@ rust = "latest"
 uv = "latest"
 
 # Development tools
-pre-commit = "latest"
 terraform = "latest"
 ty = "latest"
-
-# Default backend tools
-1password-cli = "latest"
-acli = "latest"
-awscli = "latest"
-bat = "latest"
-fd = "latest"
-fzf = "latest"
-gh = "latest"
-ghq = "latest"
-jq = "latest"
-lazygit = "latest"
-neovim = "latest"
-ripgrep = "latest"
-starship = "latest"
-yazi = "latest"
-zellij = "latest"
-zoxide = "latest"
-claude-code = "latest"
-
-# Cargo tools
-"cargo:eza" = "latest"
 
 # npm packages
 "npm:@aikidosec/safe-chain" = "latest"
 "npm:@typescript/native-preview" = "latest"
-"npm:agent-browser" = "latest"
 "npm:czg" = "latest"
 
 # pipx packages
 "pipx:claude-code-log" = "latest"
-"pipx:git-filter-repo" = "latest"
-"pipx:snowflake-cli" = "latest"
