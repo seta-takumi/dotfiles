@@ -1,17 +1,15 @@
 { pkgs, ... }:
 {
-  # 仕事用追加 CLI ツール
+  # 仕事用PCのホスト名に変更してください
+  networking.hostName = "work";
+
   environment.systemPackages = with pkgs; [
     awscli2
     google-cloud-sdk
   ];
 
-  # 仕事用追加 GUI アプリ
-  homebrew = {
-    casks = [
-      "slack"
-      "slack-cli"
-      "zoom"
-    ];
-  };
+  homebrew.casks = [
+    "slack"
+    "zoom"
+  ];
 }

@@ -1,27 +1,19 @@
 { pkgs, ... }:
-{
-  # Nix 自体の設定
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.hostPlatform = "aarch64-darwin";
-
-  # CLI ツール
-  environment.systemPackages = with pkgs; [
-    # パッケージ管理・dotfiles
+let
+  cliBase = with pkgs; [
     chezmoi
     mise
     sheldon
+  ];
 
-    # エディタ・ターミナル
+  editors = with pkgs; [
     neovim
     starship
     zellij
     yazi
+  ];
 
-    # 検索・ファイル操作
+  fileTools = with pkgs; [
     bat
     eza
     fd
@@ -29,25 +21,38 @@
     ripgrep
     jq
     zoxide
+  ];
 
-    # Git 関連
+  gitTools = with pkgs; [
     gh
     ghq
     lazygit
     pre-commit
+  ];
 
-    # その他 CLI
+  misc = with pkgs; [
     _1password-cli
-    claude-code
     agent-browser
+    claude-code
     git-filter-repo
     snowflake-cli
   ];
+in
+{
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
+  nixpkgs.config.allowUnfree = true;
 
-  # Homebrew (cask / GUIアプリ管理)
+  environment.systemPackages = cliBase ++ editors ++ fileTools ++ gitTools ++ misc;
+
   homebrew = {
     enable = true;
-    onActivation.cleanup = "zap";
+    onActivation = {
+      autoUpdate = false;
+      cleanup = "zap";
+    };
     taps = [
       "arto-app/tap"
       "nikitabobko/tap"
@@ -70,7 +75,6 @@
     ];
   };
 
-  # macOS システム設定
   system.stateVersion = 6;
   security.pam.services.sudo_local.touchIdAuth = true;
 }
