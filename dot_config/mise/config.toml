@@ -29,3 +29,4 @@ ty = "latest"
 
 # pipx packages
 "pipx:claude-code-log" = "latest"
+"pipx:snowflake-cli" = "latest"

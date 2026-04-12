@@ -35,7 +35,6 @@ let
     agent-browser
     claude-code
     git-filter-repo
-    snowflake-cli
   ];
 in
 {

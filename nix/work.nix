@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
-  # 仕事用PCのホスト名に変更してください
+  # 仕事用PCのユーザー名・ホスト名に変更してください
+  system.primaryUser = "work";
   networking.hostName = "work";
 
   environment.systemPackages = with pkgs; [
