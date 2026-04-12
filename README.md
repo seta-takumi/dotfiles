@@ -20,7 +20,7 @@ sudo mv /etc/zshrc /etc/zshrc.before-nix-darwin
 sudo nix run nix-darwin -- switch --flake ~/ghq/github.com/seta-takumi/dotfiles#<hostname>
 
 # 5. dotfiles の適用 & ランタイムのインストール
-chezmoi init --apply seta-takumi/dotfiles
+chezmoi init --apply --source ~/ghq/github.com/seta-takumi/dotfiles
 mise install
 ```
 
@@ -35,7 +35,7 @@ darwin-rebuild switch --flake ~/ghq/github.com/seta-takumi/dotfiles#<hostname>
 | ファイル       | 説明                                             |
 | -------------- | ------------------------------------------------ |
 | `flake.nix`    | nix-darwin エントリポイント（プライベート/仕事用） |
-| `nix/`         | Nix モジュール（common / work / hosts）          |
+| `nix/`         | Nix モジュール（common / private / work）        |
 | `dot_zshrc`    | zsh 設定                                         |
 | `dot_zprofile` | ログインシェル設定                               |
 | `dot_zshenv`   | 環境変数                                         |
@@ -55,7 +55,7 @@ darwin-rebuild switch --flake ~/ghq/github.com/seta-takumi/dotfiles#<hostname>
 
 `flake.nix` に2つの構成を定義しています:
 
-- **プライベート** (`nix/common.nix`): ベースとなる共通パッケージ
+- **プライベート** (`nix/common.nix` + `nix/private.nix`): ベースとなる共通パッケージ
 - **仕事用** (`nix/common.nix` + `nix/work.nix`): 共通 + awscli, gcloud, Slack, Zoom 等を追加
 
 ホスト名で切り替え:
