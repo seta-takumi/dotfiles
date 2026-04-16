@@ -1,8 +1,8 @@
 { pkgs, ... }:
 {
   # 仕事用PCのユーザー名・ホスト名に変更してください
-  system.primaryUser = "work";
-  networking.hostName = "work";
+  system.primaryUser = "ta_seta";
+  networking.hostName = "N01709497";
 
   environment.systemPackages = with pkgs; [
     awscli2

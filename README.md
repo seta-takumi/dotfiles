@@ -27,29 +27,29 @@ mise install
 初回以降の nix-darwin 更新:
 
 ```bash
-darwin-rebuild switch --flake ~/ghq/github.com/seta-takumi/dotfiles#<hostname>
+sudo darwin-rebuild switch --flake ~/ghq/github.com/seta-takumi/dotfiles#<hostname>
 ```
 
 ## 含まれる設定
 
-| ファイル       | 説明                                             |
-| -------------- | ------------------------------------------------ |
+| ファイル       | 説明                                               |
+| -------------- | -------------------------------------------------- |
 | `flake.nix`    | nix-darwin エントリポイント（プライベート/仕事用） |
-| `nix/`         | Nix モジュール（common / private / work）        |
-| `dot_zshrc`    | zsh 設定                                         |
-| `dot_zprofile` | ログインシェル設定                               |
-| `dot_zshenv`   | 環境変数                                         |
-| `dot_config/`  | mise / Neovim / sheldon / starship / yazi など   |
-| `dot_claude/`  | Claude Code 設定                                 |
+| `nix/`         | Nix モジュール（common / private / work）          |
+| `dot_zshrc`    | zsh 設定                                           |
+| `dot_zprofile` | ログインシェル設定                                 |
+| `dot_zshenv`   | 環境変数                                           |
+| `dot_config/`  | mise / Neovim / sheldon / starship / yazi など     |
+| `dot_claude/`  | Claude Code 設定                                   |
 
 ## ツール管理方針
 
-| レイヤー   | ツール     | 管理対象                                           |
-| ---------- | ---------- | -------------------------------------------------- |
-| パッケージ | nix-darwin | CLI ツール、GUI アプリ（cask）                     |
-| ランタイム | mise       | 言語バージョン管理（go, node, rust 等）、npm/pipx  |
-| dotfiles   | chezmoi    | 設定ファイルの展開                                 |
-| zsh プラグイン | sheldon | zsh-autosuggestions, fast-syntax-highlighting 等   |
+| レイヤー       | ツール     | 管理対象                                          |
+| -------------- | ---------- | ------------------------------------------------- |
+| パッケージ     | nix-darwin | CLI ツール、GUI アプリ（cask）                    |
+| ランタイム     | mise       | 言語バージョン管理（go, node, rust 等）、npm/pipx |
+| dotfiles       | chezmoi    | 設定ファイルの展開                                |
+| zsh プラグイン | sheldon    | zsh-autosuggestions, fast-syntax-highlighting 等  |
 
 ### プライベート / 仕事用の切り替え
 
