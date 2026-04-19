@@ -23,6 +23,10 @@ terraform = "latest"
 ty = "latest"
 claude-code = "latest"
 "github:github/copilot-cli" = "latest"
+{{ if eq .chezmoi.hostname "tak" -}}
+codex = "latest"
+{{ end -}}
+
 
 # npm packages
 "npm:@aikidosec/safe-chain" = "latest"
@@ -31,4 +35,6 @@ claude-code = "latest"
 
 # pipx packages
 "pipx:claude-code-log" = "latest"
+{{ if eq .chezmoi.hostname "N01709497" -}}
 "pipx:snowflake-cli" = "latest"
+{{ end -}}
