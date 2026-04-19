@@ -62,7 +62,6 @@ in
       "arc"
       "arto-app/tap/arto"
       "cmux"
-      "copilot-cli"
       "drawio"
       "font-moralerspace-hw"
       "font-udev-gothic-nf"

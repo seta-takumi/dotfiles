@@ -22,6 +22,7 @@ uv = "latest"
 terraform = "latest"
 ty = "latest"
 claude-code = "latest"
+"github:github/copilot-cli" = "latest"
 
 # npm packages
 "npm:@aikidosec/safe-chain" = "latest"
