@@ -33,7 +33,6 @@ let
   misc = with pkgs; [
     _1password-cli
     agent-browser
-    claude-code
     git-filter-repo
   ];
 in

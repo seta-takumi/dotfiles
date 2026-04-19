@@ -21,6 +21,7 @@ uv = "latest"
 # Development tools
 terraform = "latest"
 ty = "latest"
+claude-code = "latest"
 
 # npm packages
 "npm:@aikidosec/safe-chain" = "latest"
