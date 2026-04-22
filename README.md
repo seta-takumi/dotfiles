@@ -27,7 +27,11 @@ mise install
 初回以降の nix-darwin 更新:
 
 ```bash
-sudo darwin-rebuild switch --flake ~/ghq/github.com/seta-takumi/dotfiles#<hostname>
+# dotfiles直下でflake.lock更新
+nix flake update
+
+# lock更新後にnix-darwinを再適用
+sudo darwin-rebuild switch --flake .#<hostname>
 ```
 
 ## 含まれる設定
