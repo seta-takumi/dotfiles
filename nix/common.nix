@@ -69,6 +69,7 @@ in
       "ghostty@tip"
       "obsidian"
       "thebrowsercompany-dia"
+      "claude"
       "visual-studio-code"
     ];
   };
