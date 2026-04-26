@@ -24,6 +24,7 @@ let
   ];
 
   gitTools = with pkgs; [
+    git
     gh
     ghq
     lazygit
