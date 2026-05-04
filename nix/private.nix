@@ -5,5 +5,6 @@
 
   homebrew.casks = [
     "codex-app"
+    "google-chrome"
   ];
 }
