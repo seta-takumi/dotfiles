@@ -25,6 +25,7 @@ let
 
   gitTools = with pkgs; [
     git
+    git-wt
     gh
     ghq
     lazygit
