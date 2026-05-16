@@ -1,7 +1,7 @@
 customCommands:
   - command: czg
     context: files
-    key: c
+    key: C
     output: terminal
   - key: <c-g>
     context: files
