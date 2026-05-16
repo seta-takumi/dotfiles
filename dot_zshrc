@@ -4,7 +4,7 @@ eval "$(sheldon source)"
 eval "$(mise activate zsh)"
 eval "$(git wt --init zsh)"
 
-autoload -U compinit
+autoload -Uz compinit
 compinit
 
 # alias
