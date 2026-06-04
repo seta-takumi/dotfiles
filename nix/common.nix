@@ -51,7 +51,7 @@ in
     enable = true;
     onActivation = {
       autoUpdate = false;
-      cleanup = "zap";
+      cleanup = "none";
     };
     taps = [
       "arto-app/tap"
@@ -67,7 +67,7 @@ in
       "drawio"
       "font-moralerspace-hw"
       "font-udev-gothic-nf"
-      "ghostty@tip"
+      "ghostty"
       "obsidian"
       "thebrowsercompany-dia"
       "claude"
