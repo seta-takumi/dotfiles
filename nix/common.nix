@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 let
   cliBase = with pkgs; [
     chezmoi
@@ -37,6 +37,10 @@ let
     agent-browser
     git-filter-repo
   ];
+
+  guiApps = [
+    inputs.arto.packages.${pkgs.system}.default
+  ];
 in
 {
   nix.settings.experimental-features = [
@@ -45,7 +49,7 @@ in
   ];
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = cliBase ++ editors ++ fileTools ++ gitTools ++ misc;
+  environment.systemPackages = cliBase ++ editors ++ fileTools ++ gitTools ++ misc ++ guiApps;
 
   homebrew = {
     enable = true;
@@ -54,7 +58,6 @@ in
       cleanup = "none";
     };
     taps = [
-      "arto-app/tap"
       "nikitabobko/tap"
     ];
     casks = [
@@ -62,7 +65,6 @@ in
       "nikitabobko/tap/aerospace"
       "alt-tab"
       "arc"
-      "arto-app/tap/arto"
       "cmux"
       "drawio"
       "font-moralerspace-hw"

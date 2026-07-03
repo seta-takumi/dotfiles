@@ -7,6 +7,7 @@
       url = "github:nix-darwin/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    arto.url = "github:arto-app/Arto";
   };
 
   outputs =
@@ -14,6 +15,7 @@
       self,
       nixpkgs,
       nix-darwin,
+      arto,
     }:
     let
       system = "aarch64-darwin";
@@ -28,7 +30,7 @@
         };
 
       inputs = {
-        inherit nixpkgs nix-darwin;
+        inherit nixpkgs nix-darwin arto;
       };
     in
     {
