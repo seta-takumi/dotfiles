@@ -10,7 +10,10 @@
   ];
 
   homebrew.casks = [
+    "claude"
+    "drawio"
     "slack"
+    "visual-studio-code"
     "zoom"
   ];
 }

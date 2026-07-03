@@ -34,7 +34,6 @@ let
 
   misc = with pkgs; [
     _1password-cli
-    agent-browser
     git-filter-repo
   ];
 
@@ -57,23 +56,16 @@ in
       autoUpdate = false;
       cleanup = "none";
     };
-    taps = [
-      "nikitabobko/tap"
-    ];
     casks = [
       "1password"
-      "nikitabobko/tap/aerospace"
       "alt-tab"
       "arc"
       "cmux"
-      "drawio"
       "font-moralerspace-hw"
       "font-udev-gothic-nf"
       "ghostty"
       "obsidian"
       "thebrowsercompany-dia"
-      "claude"
-      "visual-studio-code"
     ];
   };
 
