@@ -3,6 +3,14 @@
 - Respond in Japanese.
 - Use sub-agents whenever possible.
 
+## advisor ツールの扱い
+
+- advisor はメイン会話（親エージェント）専用。サブエージェント（Agent/Task）には
+  tool 定義が渡らないため、内部で呼ぼうとすると「Advisor unavailable」になる。
+- サブエージェントを起動するときは、プロンプトに「advisor は呼ばない」と明示する。
+- 強いレビュー・相談が必要な作業は、サブエージェントには結論と根拠だけ返させ、
+  親会話に戻ってから advisor を呼ぶ。
+
 ## Git Commit Message Format
 
 **必須**: Conventional Commitsフォーマットを使用
