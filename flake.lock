@@ -6,11 +6,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1782969674,
-        "narHash": "sha256-VXnkI5rueDb4K13sy/DKW2N82A5Sguxd8KM6DsfIb2k=",
+        "lastModified": 1783398300,
+        "narHash": "sha256-z7FoE1ojX+uERcldJX18GdrZRwq8z9Xq658JG06BXwA=",
         "owner": "arto-app",
         "repo": "Arto",
-        "rev": "77b64d92ed0c2d21f04d739eb3498821915c8ae6",
+        "rev": "10b6349a327a200e1c538b76aed3eecf4ea968ee",
         "type": "github"
       },
       "original": {
@@ -41,11 +41,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781761792,
-        "narHash": "sha256-rCPytmKNjctLloB6UgK5CRrHSwV4b0ygxtJLPPp8R14=",
+        "lastModified": 1784123936,
+        "narHash": "sha256-IOWwQMJhUxcojm0MRvuKs1fKLH727u4+hHeEOPhdUyA=",
         "owner": "nix-darwin",
         "repo": "nix-darwin",
-        "rev": "a1fa429e945becaf60468600daf649be4ba0350c",
+        "rev": "a4cf1d10853b0d2be19b9eca35d749e201d70b55",
         "type": "github"
       },
       "original": {
@@ -72,11 +72,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1783247743,
-        "narHash": "sha256-9b2xGt5CAd6WriPJOZs/EYXq9fGVCeoisYo1P3nhL2Y=",
+        "lastModified": 1784176690,
+        "narHash": "sha256-RUXu+GHGkY+eShsqx8hp0BIIo51K3V1Q8AY4pPAUcDw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c4013e501c048ae7c4a8940c92837636042bf6c3",
+        "rev": "6368bc923cec55a5f78960ade0cb4dd99580e087",
         "type": "github"
       },
       "original": {
