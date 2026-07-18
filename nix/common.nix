@@ -65,7 +65,6 @@ in
       "font-udev-gothic-nf"
       "ghostty"
       "obsidian"
-      "thebrowsercompany-dia"
     ];
   };
 
