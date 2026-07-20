@@ -4,7 +4,7 @@
   networking.hostName = "tak";
 
   homebrew.casks = [
-    "codex-app"
+    "chatgpt"
     "google-chrome"
   ];
 }
