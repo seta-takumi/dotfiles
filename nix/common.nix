@@ -2,6 +2,7 @@
 let
   cliBase = with pkgs; [
     chezmoi
+    herdr
     mise
     sheldon
   ];
@@ -21,6 +22,7 @@ let
     ripgrep
     jq
     zoxide
+    ffmpeg
   ];
 
   gitTools = with pkgs; [
@@ -65,6 +67,7 @@ in
       "font-udev-gothic-nf"
       "ghostty"
       "obsidian"
+      "zed"
     ];
   };
 
