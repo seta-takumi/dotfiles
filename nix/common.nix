@@ -62,6 +62,7 @@ in
       "1password"
       "alt-tab"
       "arc"
+      "claude"
       "cmux"
       "font-moralerspace-hw"
       "font-udev-gothic-nf"
