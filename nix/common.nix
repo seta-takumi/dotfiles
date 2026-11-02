@@ -58,9 +58,13 @@ in
       autoUpdate = false;
       cleanup = "none";
     };
+    taps = [
+      "anomalyco/tap"
+    ];
     casks = [
       "1password"
       "alt-tab"
+      "anomalyco/tap/hex"
       "arc"
       "claude"
       "cmux"
