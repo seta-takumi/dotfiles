@@ -57,12 +57,9 @@
   },
   "enabledPlugins": {
     "pr-review-toolkit@claude-plugins-official": true,
-    "code-review@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true,
     "terraform-code-generation@hashicorp": true,
     "dbt@dbt-agent-marketplace": true,
-    "skill-creator@claude-plugins-official": true,
-    "chrome-devtools-mcp@chrome-devtools-plugins": true
+    "skill-creator@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "anthropic-agent-skills": {
@@ -88,13 +85,10 @@
         "source": "github",
         "repo": "dbt-labs/dbt-agent-skills"
       }
-    },
-    "chrome-devtools-plugins": {
-      "source": {
-        "source": "github",
-        "repo": "ChromeDevTools/chrome-devtools-mcp"
-      }
     }
   },
-  "language": "日本語"
+  "language": "日本語",
+  "advisorModel": "opus",
+  "autoCompactEnabled": false,
+  "remoteControlAtStartup": true
 }

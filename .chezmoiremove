@@ -1,0 +1,5 @@
+# 管理対象から外したファイルを chezmoi apply 時に展開先から削除する
+.claude/skills/agent-browser
+.claude/skills/grill-me
+.claude/skills/grill-with-docs
+.claude/skills/reviewing-skills
