@@ -1,19 +1,4 @@
-local lsp = {
-  "ty",
-  "tsgo",
-}
-
 return {
-  {
-    "mason-org/mason-lspconfig.nvim",
-    opts = {
-      ensure_installed = lsp,
-    },
-    dependencies = {
-      { "mason-org/mason.nvim", opts = {} },
-      "neovim/nvim-lspconfig",
-    },
-  },
   {
     "neovim/nvim-lspconfig",
     opts = {
@@ -25,7 +10,12 @@ return {
           end,
         },
       },
+      servers = {
+        lua_ls = { enabled = false },
+        -- TypeScript 7 以降の tsc を言語サーバーとして使う。
+        -- プロジェクトの node_modules/.bin/tsc を優先し、TS 6 以下のプロジェクトでは起動しない。
+        tsc = { mason = false },
+      },
     },
   },
-  vim.lsp.enable(lsp),
 }
